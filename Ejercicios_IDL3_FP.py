@@ -149,3 +149,28 @@ st.write(f"Números iguales a 10: {iguales}")
 st.write(f"Números menores que 10: {menores}")
 
 st.write("********************************************************************************************")
+
+
+
+#Ejercicio-09
+#Calcular la media de N números dados e imprimir su resultado.
+
+st.subheader("Ejercicio 9: Calcular la media de N números dados e imprimir su resultado")
+
+N = st.number_input("Ingrese la cantidad de números a promediar: ", min_value=1)
+
+suma = 0
+
+# Solicitar al usuario que ingrese los números y calcular la suma
+for i in range(N):
+    num = st.number_input(f"Ingrese el número {i + 1}: ")
+    suma += num
+
+# Calcular la media
+media = suma / N if N > 0 else 0
+
+# Imprimir el resultado
+st.write(f"La media de los {N} números es: {media}")
+
+
+st.write("********************************************************************************************")
