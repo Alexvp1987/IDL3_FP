@@ -177,28 +177,33 @@ st.write("**********************************************************************
 
 
 #Ejercicio-10
-#Calcular el número mayor de una lista de N números dados.
+#Dado N notas de un estudiante calcular: 
+#Cuantas notas tiene desaprobados. Cuantos aprobados. El promedio de todas las notas.
 
-st.subheader("Ejercicio 10: Calcular el mayor de una lista de N números dados")
+st.subheader("Ejercicio 10: Calcular notas de un estudiante")
 
-# Solicitar al usuario que ingrese la cantidad de números
-N = st.number_input("Ingrese la cantidad de números: ", min_value=1)
+N = int(input("Ingrese la cantidad de notas: "))
 
-numeros = []
+aprobados = 0
+desaprobados = 0
+suma = 0
 
-# Solicitar al usuario que ingrese los números
+# Solicitar las notas y calcular
 for i in range(N):
-    num = st.number_input(f"Ingrese el número {i + 1}: ")
-    numeros.append(num)
+    nota = st.number_input(f"Ingrese la nota {i + 1}: ")
+    suma += nota
+    
+    if nota >= 11:  # Asumiendo que la nota mínima para aprobar es 6
+        aprobados += 1
+    else:
+        desaprobados += 1
 
+# Calcular el promedio
+promedio = suma / N if N > 0 else 0
 
-# Calcular el número mayor
-numero_mayor = max(numeros) if numeros else None
-
-# Imprimir el resultado
-if numero_mayor is not None:
-    st.write(f"El número mayor de la lista es: {numero_mayor}")
-else:
-    st.write("No se ingresaron números.")
+# Imprimir los resultados
+st.write(f"Número de notas aprobadas: {aprobados}")
+st.write(f"Número de notas desaprobadas: {desaprobados}")
+st.write(f"Promedio de las notas: {promedio:.2f}")
 
 st.write("********************************************************************************************")
