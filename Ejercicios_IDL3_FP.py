@@ -284,7 +284,7 @@ st.write("**********************************************************************
 
 #Ejercicio-13
 #Crear una calculadora de las 4 operaciones basicas 
-st.subheader("Ejercicio 12: Calculadora con las 4 operaciones básicas")
+st.subheader("Ejercicio 13: Calculadora con las 4 operaciones básicas")
 
 def suma(a, b):
     return a + b
