@@ -1,5 +1,5 @@
 #Ejercicio-01: 
-#Se requiere el código en python para imprimir en pantalla 10 veces el texto “HolaMundo”.
+#Se requiere algoritmo para imprimir en pantalla 10 veces el texto “HolaMundo”.
 
 import streamlit as st
 
@@ -10,4 +10,15 @@ for i in range(10):
     st.write("HolaMundo")
 
 st.write("********************************************************************************************")
+
+#Ejercicio-02: 
+#Se requiere algoritmo para imprimir en pantalla los 10 primeros numeros”.
+
+st.subheader("Ejercicio 2: Imprimir en pantalla los 10 primeros numeros")
+
+for i in range(10):
+    print(i)
+
+st.write("********************************************************************************************")
+
 
