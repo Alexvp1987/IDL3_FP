@@ -187,7 +187,6 @@ Numx = st.number_input("Ingrese la cantidad de notas: ", min_value=1, step=1)
 aprobados = 0
 desaprobados = 0
 sumax = 0
-
 # Solicitar las notas y calcular
 for i in range(Numx):
     nota = st.number_input(f"Ingrese la nota {i + 1}: ")
@@ -197,7 +196,6 @@ for i in range(Numx):
         aprobados += 1
     else:
         desaprobados += 1
-
 # Calcular el promedio
 promedio = sumax / Numx if Numx > 0 else 0
 
@@ -205,7 +203,6 @@ promedio = sumax / Numx if Numx > 0 else 0
 st.write(f"Número de notas aprobadas: {aprobados}")
 st.write(f"Número de notas desaprobadas: {desaprobados}")
 st.write(f"Promedio de las notas: {promedio:.2f}")
-
 st.write("********************************************************************************************")
 
 
@@ -213,22 +210,16 @@ st.write("**********************************************************************
 #Crea un programa que pida al usuario una contraseña, de forma repetitiva mientras que no 
 #introduzca “asdasd”. Cuando finalmente escriba la contraseña correcta, se le dirá “Bienvenido” y 
 #terminará el programa.
-
 st.subheader("Ejercicio 11: Login")
-
 def verificar_contrasena():
     st.title("Verificación de contraseña")
-
     # Contraseña correcta
     contrasena_correcta = "asdasd"
-
     # Inicializar variable de sesión para almacenar la entrada del usuario
     if "contrasena_ingresada" not in st.session_state:
         st.session_state.contrasena_ingresada = ""
-
     # Input de la contraseña
     contrasena_ingresada = st.text_input("Introduce la contraseña:", type="password")
-
     # Botón para verificar la contraseña
     if st.button("Verificar"):
         if contrasena_ingresada == contrasena_correcta:
@@ -236,12 +227,9 @@ def verificar_contrasena():
             st.success("Bienvenido")
         else:
             st.error("Contraseña incorrecta, intenta de nuevo")
-
 # Llamada a la función principal
 if __name__ == "__main__":
     verificar_contrasena()
-
-
 st.write("********************************************************************************************")
 
 
