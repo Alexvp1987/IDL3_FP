@@ -273,7 +273,7 @@ def main():
     else:
         st.write("Por favor, ingrese un radio mayor a CERO")
 
-if __name__ == "__main__"
+if __name__ == "__main__":
 main()
 
 st.write("********************************************************************************************")
