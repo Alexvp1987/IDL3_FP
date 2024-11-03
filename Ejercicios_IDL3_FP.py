@@ -157,8 +157,7 @@ st.write("**********************************************************************
 
 st.subheader("Ejercicio 9: Calcular la media de N números dados e imprimir su resultado")
 
-#N = st.number_input("Ingrese la cantidad de números a promediar: ", min_value=1)
-N = st.float("Ingrese la cantidad de números a promediar: ", min_value=1)
+N = st.number_input("Ingrese la cantidad de números a promediar: ", min_value=1)
 
 suma = 0
 
