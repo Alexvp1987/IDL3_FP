@@ -128,7 +128,7 @@ st.write("**********************************************************************
 
 numeros = []
 for i in range(10):
-    num = st.number_input(f"Ingrese el número {i + 1}: ")
+    num = st.number_input(f"Ingrese el número {i + 1}: ", min_value=1)
     numeros.append(num)
 
 # Calcular la media
