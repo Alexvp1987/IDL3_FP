@@ -126,6 +126,9 @@ st.write("**********************************************************************
 #De una lista de 10 números calcular la media y determinar cuántos son mayores que 10,cuantos
 #son iguales y cuántos son menores.
 
+st.subheader("Ejercicio 8: De 10 numeros calcular la media y determinar mayores, iguales o menores a 10")
+
+
 numeros = []
 for i in range(10):
     num = st.number_input(f"Ingrese el número {i + 1}: ", min_value=1)
@@ -144,3 +147,5 @@ st.write(f"La media de los números es: {media}")
 st.write(f"Números mayores que 10: {mayores}")
 st.write(f"Números iguales a 10: {iguales}")
 st.write(f"Números menores que 10: {menores}")
+
+st.write("********************************************************************************************")
