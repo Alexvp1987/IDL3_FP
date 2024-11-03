@@ -182,14 +182,15 @@ st.write("**********************************************************************
 st.subheader("Ejercicio 10: Calcular el mayor de una lista de N números dados")
 
 # Solicitar al usuario que ingrese la cantidad de números
-n = st.number_input("Ingrese la cantidad de números: ", min_value=1)
+N = st.number_input("Ingrese la cantidad de números: ", min_value=1)
 
 numeros = []
 
 # Solicitar al usuario que ingrese los números
-for i in range(n):
+for i in range(N):
     num = st.number_input(f"Ingrese el número {i + 1}: ")
     numeros.append(num)
+
 
 # Calcular el número mayor
 numero_mayor = max(numeros) if numeros else None
