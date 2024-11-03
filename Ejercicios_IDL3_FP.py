@@ -17,7 +17,7 @@ st.write("**********************************************************************
 st.subheader("Ejercicio 2: Imprimir en pantalla los 10 primeros numeros")
 
 for i in range(10):
-    print(i)
+    st.write(i)
 
 st.write("********************************************************************************************")
 
