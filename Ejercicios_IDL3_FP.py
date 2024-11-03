@@ -119,3 +119,28 @@ st.write(f"El promedio de los números pares entre 20 y 400 es: {promedio}")
 
 st.write("********************************************************************************************")
 
+
+
+
+#Ejercicio-08:
+#De una lista de 10 números calcular la media y determinar cuántos son mayores que 10,cuantos
+#son iguales y cuántos son menores.
+
+numeros = []
+for i in range(10):
+    num = st.number_input(f"Ingrese el número {i + 1}: ")
+    numeros.append(num)
+
+# Calcular la media
+media = sum(numeros) / len(numeros)
+
+# Contar cuántos son mayores, iguales y menores que 10
+mayores = sum(1 for num in numeros if num > 10)
+iguales = sum(1 for num in numeros if num == 10)
+menores = sum(1 for num in numeros if num < 10)
+
+# Imprimir los resultados
+st.write(f"La media de los números es: {media}")
+st.write(f"Números mayores que 10: {mayores}")
+st.write(f"Números iguales a 10: {iguales}")
+st.write(f"Números menores que 10: {menores}")
