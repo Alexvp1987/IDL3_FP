@@ -182,7 +182,7 @@ st.write("**********************************************************************
 
 st.subheader("Ejercicio 10: Calcular notas de un estudiante")
 
-N = int(input("Ingrese la cantidad de notas: "))
+N = st.number_input("Ingrese la cantidad de notas: ")
 
 aprobados = 0
 desaprobados = 0
