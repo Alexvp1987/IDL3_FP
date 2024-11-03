@@ -182,14 +182,14 @@ st.write("**********************************************************************
 
 st.subheader("Ejercicio 10: Calcular notas de un estudiante")
 
-N = st.number_input("Ingrese la cantidad de notas: ")
+Num = st.number_input("Ingrese la cantidad de notas: ")
 
 aprobados = 0
 desaprobados = 0
 suma = 0
 
 # Solicitar las notas y calcular
-for i in range(N):
+for i in range(Num):
     nota = st.number_input(f"Ingrese la nota {i + 1}: ", min_value=1)
     suma += nota
     
@@ -199,7 +199,7 @@ for i in range(N):
         desaprobados += 1
 
 # Calcular el promedio
-promedio = suma / N if N > 0 else 0
+promedio = suma / Num if Num > 0 else 0
 
 # Imprimir los resultados
 st.write(f"Número de notas aprobadas: {aprobados}")
