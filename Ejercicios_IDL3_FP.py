@@ -186,12 +186,12 @@ Numx = st.number_input("Ingrese la cantidad de notas: ")
 
 aprobados = 0
 desaprobados = 0
-suma = 0
+sumax = 0
 
 # Solicitar las notas y calcular
 for i in range(Numx):
     nota = st.number_input(f"Ingrese la nota {i + 1}: ")
-    suma += nota
+    sumax += nota
     
     if nota >= 11:  # Asumiendo que la nota mínima para aprobar es 6
         aprobados += 1
@@ -199,7 +199,7 @@ for i in range(Numx):
         desaprobados += 1
 
 # Calcular el promedio
-promedio = suma / Numx if Numx > 0 else 0
+promedio = sumax / Numx if Numx > 0 else 0
 
 # Imprimir los resultados
 st.write(f"Número de notas aprobadas: {aprobados}")
