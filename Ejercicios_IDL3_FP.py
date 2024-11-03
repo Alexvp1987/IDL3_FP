@@ -182,7 +182,7 @@ st.write("**********************************************************************
 
 st.subheader("Ejercicio 10: Calcular notas de un estudiante")
 
-Numx = st.number_input("Ingrese la cantidad de notas: ")
+Numx = st.number_input("Ingrese la cantidad de notas: ", min_value=1)
 
 aprobados = 0
 desaprobados = 0
