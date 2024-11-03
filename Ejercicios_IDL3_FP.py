@@ -41,7 +41,7 @@ st.write("**********************************************************************
 #Ejercicio-04:
 #Imprimir la siguiente serie (x+1)+(x+3)+(x+5)+…+(x+100) y su resultado.
 
-x = st.number_input("Ingrese el valor de x: ", min_value=1))
+x = st.number_input("Ingrese el valor de x:", min_value=1)
 
 # Inicializar la suma
 suma = 0
