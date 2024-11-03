@@ -21,4 +21,18 @@ for i in range(10):
 
 st.write("********************************************************************************************")
 
+#Ejercicio-03:
+#Se requiere algoritmo para imprimir la tabla de multiplicar de 1 al 12 con el valor ingresado
+#por el usuario
 
+st.subheader("Ejercicio 3: Imprimir tabla multiplicar de 1 al 12")
+
+# Solicitar al usuario que ingrese un número
+numero = st.number_input("Ingrese un número para ver su tabla de multiplicar:", min_value=1)
+
+# Imprimir la tabla de multiplicar del número ingresado
+for i in range(1, 13):
+    resultado = numero * i
+    st.write(f"{numero} x {i} = {resultado}")
+
+st.write("********************************************************************************************")
