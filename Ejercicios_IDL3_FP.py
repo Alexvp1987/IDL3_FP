@@ -95,4 +95,27 @@ st.write("**********************************************************************
 
 
 
+#Ejercicio-07:
+#Realice un algoritmo para calcular y mostrar el promedio de los números pares comprendidos entre 20 y 400
+
+
+st.subheader("Ejercicio 7: Mostrar el promedio de los numeros pares entre 20 y 400")
+
+# Inicializar la suma y el contador
+suma = 0
+contador = 0
+
+# Calcular la suma de los números pares entre 20 y 400
+for i in range(20, 401, 2): 
+    suma += i
+    contador += 1
+
+# Calcular el promedio
+promedio = suma / contador if contador > 0 else 0
+
+# Imprimir el resultado
+st.write(f"La suma de los números pares entre 20 y 400 es: {suma}")
+st.write(f"El promedio de los números pares entre 20 y 400 es: {promedio}")
+
+st.write("********************************************************************************************")
 
