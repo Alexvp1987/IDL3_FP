@@ -36,3 +36,25 @@ for i in range(1, 13):
     st.write(f"{numero} x {i} = {resultado}")
 
 st.write("********************************************************************************************")
+
+
+#Ejercicio-04:
+#Imprimir la siguiente serie (x+1)+(x+3)+(x+5)+…+(x+100) y su resultado.
+
+x = st.number_input("Ingrese el valor de x: ", min_value=1))
+
+# Inicializar la suma
+suma = 0
+
+# Calcular la suma de la serie
+for i in range(1, 101, 2):  
+    suma += (x + i)
+
+# Imprimir la serie
+serie = " + ".join(f"({x}+{i})" for i in range(1, 101, 2))
+st.write(f"Serie: {serie}")
+
+# Imprimir el resultado
+st.write(f"Resultado de la serie: {suma}")
+
+st.write("********************************************************************************************")
