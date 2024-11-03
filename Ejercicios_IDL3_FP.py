@@ -60,3 +60,12 @@ st.write(f"Serie: {serie}")
 st.write(f"Resultado de la serie: {suma}")
 
 st.write("********************************************************************************************")
+
+#Ejercicio-05:
+#Realice un algoritmo para generar e imprimir los números pares que se encuentran entre 0 y 100
+
+# Generar e imprimir números pares entre 0 y 100
+for i in range(0, 101, 2):
+    st.write(i)
+
+st.write("********************************************************************************************")
