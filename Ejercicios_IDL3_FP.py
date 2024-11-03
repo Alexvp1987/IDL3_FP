@@ -244,3 +244,38 @@ if __name__ == "__main__":
 
 st.write("********************************************************************************************")
 
+
+
+#Ejercicio-12
+#Crear unprograma, que permita hallar el área y perímetro de una circunferencia.
+
+import math
+
+st.subheader("Ejercicio 12: Hallar el área y perímetro de una circunferencia")
+
+def calcular_area(radio):
+    return math.pi * (radio**2)
+
+def calcular_perimetro(radio):
+    return 2 * math.pi * radio
+
+def main():
+    st.title("Calculo del área y perímetro de una circunferencia")
+
+    radio = st.number_input("Ingrese el radio de la circunferencia", min_value=0.0, step=0.1)
+    
+    if radio > 0:
+        area = calcular_area(radio)
+        perimetro = calcular_perimetro(radio)
+
+        st.write(f"Area: {area:.2f}")
+        st.write(f"Perimetro: {perimetro:.2f}")
+    
+    else
+        st.write("Por favor, ingrese un radio mayor a CERO")
+
+if __name__ == "__main__"
+main()
+
+st.write("********************************************************************************************")
+
