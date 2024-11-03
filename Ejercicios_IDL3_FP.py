@@ -190,7 +190,7 @@ suma = 0
 
 # Solicitar las notas y calcular
 for i in range(N):
-    nota = st.number_input(f"Ingrese la nota {i + 1}: ")
+    nota = st.number_input(f"Ingrese la nota {i + 1}: ", min_value=1)
     suma += nota
     
     if nota >= 11:  # Asumiendo que la nota mínima para aprobar es 6
