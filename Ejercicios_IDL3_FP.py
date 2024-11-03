@@ -77,3 +77,22 @@ for i in range(0, 101, 2):
 st.write("********************************************************************************************")
 
 
+
+#Ejercicio-06:
+#Realice un algoritmo para calcular y mostrar la suma de los números pares comprendidos entre 20 y 400.
+
+st.subheader("Ejercicio 6: Mostrar la suma de los numeros pares entre 20 y 400")
+
+suma = 0
+# Calcular la suma de los números pares entre 20 y 400
+for i in range(20, 401, 2):  # Comienza en 20, termina en 400, incrementa de 2 en 2
+    suma += i
+# Imprimir el resultado
+st.write(f"La suma de los números pares entre 20 y 400 es: {suma}")
+
+
+st.write("********************************************************************************************")
+
+
+
+
