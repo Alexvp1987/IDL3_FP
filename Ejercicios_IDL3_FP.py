@@ -270,8 +270,7 @@ def main():
 
         st.write(f"Area: {area:.2f}")
         st.write(f"Perimetro: {perimetro:.2f}")
-    
-    else
+    else:
         st.write("Por favor, ingrese un radio mayor a CERO")
 
 if __name__ == "__main__"
