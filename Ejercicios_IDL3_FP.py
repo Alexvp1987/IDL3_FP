@@ -174,3 +174,30 @@ st.write(f"La media de los {N} números es: {media}")
 
 
 st.write("********************************************************************************************")
+
+
+#Ejercicio-10
+#Calcular el número mayor de una lista de N números dados.
+
+st.subheader("Ejercicio 10: Calcular el mayor de una lista de N números dados")
+
+# Solicitar al usuario que ingrese la cantidad de números
+n = st.number_input("Ingrese la cantidad de números: ", min_value=1)
+
+numeros = []
+
+# Solicitar al usuario que ingrese los números
+for i in range(n):
+    num = st.number_input(f"Ingrese el número {i + 1}: ")
+    numeros.append(num)
+
+# Calcular el número mayor
+numero_mayor = max(numeros) if numeros else None
+
+# Imprimir el resultado
+if numero_mayor is not None:
+    st.write(f"El número mayor de la lista es: {numero_mayor}")
+else:
+    st.write("No se ingresaron números.")
+
+st.write("********************************************************************************************")
